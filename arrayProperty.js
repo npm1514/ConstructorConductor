@@ -4,10 +4,14 @@
   
   //code here
 
+var str ="class"
 
-var String = {
-	class: function(str) {
-	return str.reverse;
+String.prototype.reverse = function(){
+	var str = [];
+	str = this.split("").reverse().join("");
+	return str;
 }
 
-class(str);
+str.reverse();
+
+

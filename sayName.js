@@ -17,6 +17,5 @@ var pete = new Person ("pete", 35);
 
   //code here
 Person.prototype.sayName = function(name) {
-	this.name = name;
-	alert(name);
+	alert(this.name);
 };
